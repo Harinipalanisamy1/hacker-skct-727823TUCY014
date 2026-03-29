@@ -1,0 +1,79 @@
+{
+  "roll_number": "727823TUCY014",
+  "scan_time": "2026-03-29 14:52:27",
+  "total_payloads": 7,
+  "vulnerable": 0,
+  "possible": 0,
+  "results": [
+    {
+      "category": "localhost_bypass",
+      "payload": "http://127.0.0.1",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=http://127.0.0.1",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 5.29,
+      "response_snippet": "HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff705a741a0>: Failed to establish a new c",
+      "timestamp": "2026-03-29T14:52:27.787974"
+    },
+    {
+      "category": "localhost_bypass",
+      "payload": "http://localhost",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=http://localhost",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 3.65,
+      "response_snippet": "HTTPConnectionPool(host='localhost', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff705bd7b10>: Failed to establish a new c",
+      "timestamp": "2026-03-29T14:52:27.792341"
+    },
+    {
+      "category": "localhost_bypass",
+      "payload": "http://0.0.0.0",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=http://0.0.0.0",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 3.37,
+      "response_snippet": "HTTPConnectionPool(host='0.0.0.0', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff705a851d0>: Failed to establish a new con",
+      "timestamp": "2026-03-29T14:52:27.796422"
+    },
+    {
+      "category": "localhost_bypass",
+      "payload": "http://[::1]",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=http://%5B::1%5D",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 3.23,
+      "response_snippet": "HTTPConnectionPool(host='::1', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff705a46d70>: Failed to establish a new connect",
+      "timestamp": "2026-03-29T14:52:27.800467"
+    },
+    {
+      "category": "localhost_bypass",
+      "payload": "http://127.1",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=http://127.1",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 3.09,
+      "response_snippet": "HTTPConnectionPool(host='127.1', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff705ab4180>: Failed to establish a new conne",
+      "timestamp": "2026-03-29T14:52:27.804268"
+    },
+    {
+      "category": "localhost_bypass",
+      "payload": "http://2130706433",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=http://2130706433",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 2.92,
+      "response_snippet": "HTTPConnectionPool(host='2130706433', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff705a3ed50>: Failed to establish a new ",
+      "timestamp": "2026-03-29T14:52:27.807831"
+    },
+    {
+      "category": "localhost_bypass",
+      "payload": "http://0x7f000001",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=http://0x7f000001",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 2.1,
+      "response_snippet": "HTTPConnectionPool(host='0x7f000001', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff705a808d0>: Failed to establish a new ",
+      "timestamp": "2026-03-29T14:52:27.810489"
+    }
+  ]
+}

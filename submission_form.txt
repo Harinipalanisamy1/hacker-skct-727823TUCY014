@@ -1,0 +1,8 @@
+Name: Harini P
+Roll Number: 727823TUCY014
+Project Name: SSRF Testing Tool
+Project Category: Web Application Security
+GitHub URL: https://github.com/Harinipalanisamy1/hacker-skct-727823TUCY014
+Total Commits: [fill after completing - minimum 7 across 3 days]
+Tools Used: Python, requests, flask, VirtualBox, Kali Linux
+Tool Summary: A Python-based SSRF vulnerability scanner that injects 30+ payloads across 5 categories (localhost bypass, cloud metadata, internal network, protocol abuse, filter bypass) into a target HTTP parameter and classifies responses as VULNERABLE, POSSIBLE, FILTERED, or BLOCKED.

